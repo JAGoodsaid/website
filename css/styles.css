@@ -26,9 +26,9 @@ body{
     letter-spacing:-.035em
   }
   img {
-  max-width: 25%;
+  max-width: 10%;
   height: auto;
-}
+  }
 
   h2{
     font-size:clamp(30px,3.4vw,46px);
