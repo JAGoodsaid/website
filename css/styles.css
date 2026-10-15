@@ -1,7 +1,7 @@
 /* Standalone portfolio. Edit these tokens to change the palette. */
-:root{--ink:#E9E8FC;
+:root{--ink:#192c26;
   --body:#56617a;
-  --purple:#5768d0;
+  --purple:#1c8f74;
   --deep:#E9E8FC;
   --orange:#ff885a;
   --line:#e6e9f2;
@@ -27,7 +27,7 @@ body{
   }
   img {
   max-width: 10%;
-  height: auto;
+  height: 5%;
   }
 
   h2{
@@ -63,23 +63,25 @@ body{
     color:#b64620;
     margin-bottom:18px
   }
-  .light{color:#ffcfb7}
+  .light{color:#1c8f74}
   .muted{color:#8490ac}
   .header{
     background:#fff;
     position:relative;z-index:10;
-    border-bottom:1px solid #ffffff22
+    border-bottom:1px solid #ffffff22;
   }
   .nav-wrap{
     min-height:86px;
     display:flex;
     align-items:center;
-    justify-content:space-between;
-    gap:24px
+    justify-content:left;
+    gap:24px;
+    align-items: center
   }
   .brand{
     display:flex;
-    align-items:center;gap:13px;
+    align-items:center;
+    gap:15px;
     color:var(--ink);
     font-size:14px;
     font-weight:700
@@ -95,7 +97,7 @@ body{
   }
   .header nav{
     display:flex;
-    gap:29px;
+    gap:25px;
     align-items:center;
     font-size:13px;
     font-weight:600;
@@ -104,8 +106,9 @@ body{
   .nav-contact{
     border:1px solid #dce0ec;
     border-radius:50px;
-    padding:10px 18px
-  }
+    padding:10px 18px;
+    width: 145px;
+    }
   .nav-contact span{margin-left:15px}
   .menu-toggle{
     background:white;
@@ -141,7 +144,7 @@ body{
     letter-spacing:-3px;
     margin-bottom:28px
   }
-  .hero h1 span{color:#ffd1ba}
+  .hero h1 span{color:#0f6954}
   .hero-intro{
     max-width:530px;
     font-size:18px;
@@ -169,16 +172,16 @@ body{
   }
   .button:hover{
     transform:translateY(-3px);
-    box-shadow:0 12px 30px #091c4f22
+    box-shadow:0 12px 30px #1c8f74
   }
   .dark{
     background:var(--ink);
     color:white;
-    box-shadow:0 12px 28px #091c4f20
+    box-shadow:0 12px 28px #1c8f74
   }
   .dark:hover{
-    color:white;
-    background:#182e69
+    color:#1c8f74;
+    background:#e5f4ef
   }
   .white{
     background:white;
@@ -190,7 +193,7 @@ body{
     border-bottom:1px solid #ffffff70;
     padding-block:8px
   }
-  .text-link:hover{color:#ffd1ba}
+  .text-link:hover{color:#1c8f74}
   .text-link span{margin-left:8px}
   .location{
     font-size:12px;
@@ -244,7 +247,7 @@ body{
   .tiny-dot{
     width:6px;
     height:6px;
-    background:#ffc7aa;
+    background:#15503f;
     border-radius:50%
   }
   .system-panel{
@@ -286,8 +289,8 @@ body{
   .system-icon{
     display:grid;
     place-items:center;
-    background:#e9e8fc;
-    color:#6555bf;
+    background:#e5f4ef;
+    color:#287e66;
     border-radius:10px;
     flex:0 0 40px;
     height:40px;
@@ -295,11 +298,11 @@ body{
     font-weight:700
   }
   .system-icon.orange{
-    background:#fff0e9;
-    color:#b95632
+    background:#c5e4d8;
+    color:#287e66
   }
   .system-icon.green{
-    background:#e5f4ef;
+    background:#9ddcc7;
     color:#287e66
   }
   .system-row strong{
@@ -339,8 +342,8 @@ body{
   position:absolute;
   right:-20px;
   bottom:0;
-  background:#fff0e8;
-  color:#84503c;
+  background:#e5f4ef;
+  color:#192c26;
   padding:17px 23px;
   display:flex;
   align-items:center;
@@ -353,7 +356,7 @@ body{
 }
 .floating-note>span{
   font-size:30px;
-  color:#e78961
+  color:#287e66
 }
 .expertise{
   position:relative;
@@ -855,7 +858,7 @@ a.talk:hover h3{
   margin:0
 }
 .contact{
-  background:linear-gradient(145deg,#5768d0,#150b72);
+  background:linear-gradient(145deg,#cadad4,#48be8e);
   padding:120px 0 100px;
   text-align:center;
   color:white;
@@ -884,7 +887,7 @@ a.talk:hover h3{
   margin-bottom:24px
 }
 .contact h2 span{
-  color:#ffd1ba
+  color:#1c8f74
 }
 .contact p:not(.eyebrow){
   color:#e0e1fc;
@@ -900,7 +903,7 @@ a.talk:hover h3{
   flex-wrap:wrap
 }
 .contact-links a:hover{
-  color:#ffd1ba
+  color:#1c8f74
 }
 .contact-links>span{
   opacity:.3
@@ -908,9 +911,9 @@ a.talk:hover h3{
 .footer-inner{
   display:flex;
   align-items:center;
-  justify-content:space-between;
-  gap:25px;
-  padding-block:30px
+  justify-content:flex-start;
+  gap: 5%;
+  padding-block:10px
 }
 .footer-inner>p{
   font-size:10px;
@@ -918,10 +921,13 @@ a.talk:hover h3{
   color:#798298
 }
 .footer-inner .brand{
-  font-size:11px
+  font-size:75%;
+  height: 100%;
+  width: 40%;
+  justify-content: left
 }
 .footer-inner .brand-mark{
-  font-size:29px
+  font-size: 15%
 }
 .skip{
   position:fixed;
