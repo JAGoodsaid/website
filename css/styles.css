@@ -25,6 +25,11 @@ body{
     line-height:1.22;
     letter-spacing:-.035em
   }
+  img {
+  max-width: 25%;
+  height: auto;
+}
+
   h2{
     font-size:clamp(30px,3.4vw,46px);
     font-weight:700;
