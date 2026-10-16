@@ -158,6 +158,60 @@ body{
     flex-wrap:wrap;
     margin-top:30px
   }
+  @media (max-width: 767px) {
+  /* ... your existing .actions code ... */
+ #navigation .nav-contact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;   /* Pulls text and arrow to the dead center */
+    padding-left: 3%;        /* Symmetrical left padding */
+    padding-right: 3%;       /* Symmetrical right padding balances out the whitespace */
+  }
+  [aria-label="Jasmine Goodsaid"],
+  header > div:first-child { 
+    justify-content: center !important; 
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .nav-contact{
+    gap: 0%;
+  }
+ header {
+    padding-top: 3% !important;    /* Small breathing room at the very top of screen */
+    padding-bottom: 0 !important;
+    gap: 1% !important;             /* If using flex/grid header, sets tight gap between logo & menu */
+  }
+
+#navigation {
+    flex-direction: row;      /* Forces everything onto one line */
+    flex-wrap: nowrap;        /* Prevents the button from dropping down */
+    justify-content: center;  /* Centers the whole row on the screen */
+    align-items: center;      /* Vertically aligns the links with the button */
+    gap: 5%;                /* Tightens space between items so they fit */
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 3% !important;
+  }
+
+  #navigation a {
+    font-size: 80%; 
+    white-space: nowrap;      /* Prevents longer words like "Experience" from breaking */
+  }
+
+  .container.nav-wrap{
+    gap:2%;
+    padding:1% 0%;
+  }
+  .brand{
+    justify-content: center;
+  }
+ 
+  .location {
+    text-align: center;
+    width: 100%;        /* Ensures the block spans the full width to center correctly */
+  }
+}
+
   .button{
     display:inline-flex;
     align-items:center;
