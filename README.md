@@ -28,3 +28,6 @@ JavaScript syntax and all local file and section references were checked. Browse
 
 ## Count-up animation
 Statistics animate once on scroll, from zero to their original HTML values, preserving the plus signs. Change `const duration = 1600` in `js/main.js` to adjust the speed (milliseconds). Edit the numbers directly in the `.stats` section of `index.html` to change the targets. Reduced-motion preferences skip the animation; screen readers receive stable final values.
+
+## SEO release
+Already configured for https://www.jagoodsaid.com/. Upload index.html, both case study HTML files, robots.txt, sitemap.xml and the assets, css and js folders. Preserve file names. Submit /sitemap.xml in Search Console after publishing. The two new preview PNGs use the existing palette and JG artwork. The original media, logos, PDFs, stylesheet and JavaScript are included unchanged.
